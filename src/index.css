@@ -8,3 +8,9 @@
 @theme {
   --font-karla: "Karla", sans-serif;
 }
+
+@layer base {
+  * {
+    @apply box-border
+  }
+}
