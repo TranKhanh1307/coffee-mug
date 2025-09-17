@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+coffee-mug-key
+coffee-mug-key.pub
