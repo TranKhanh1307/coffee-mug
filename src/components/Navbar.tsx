@@ -23,7 +23,7 @@ export default function Navbar() {
       {/* Links */}
       <ul
         className={clsx(
-          "absolute top-full left-0 flex w-full flex-col items-center overflow-hidden shadow-md transition-all duration-500 ease-in-out md:static md:flex md:max-h-fit md:w-auto md:flex-row md:gap-6 md:shadow-none",
+          "absolute top-full left-0 flex w-full flex-col items-center overflow-hidden bg-white shadow-md transition-all duration-500 ease-in-out md:static md:flex md:max-h-fit md:w-auto md:flex-row md:gap-6 md:shadow-none",
           isExpand ? "max-h-96" : "max-h-0",
         )}
       >
