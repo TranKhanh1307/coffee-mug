@@ -65,7 +65,7 @@ function NavItem({
     <a
       href={href}
       className={clsx(
-        "relative text-sm text-gray-500 uppercase after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-orange-400 after:transition after:duration-300 after:ease-in-out hover:text-black hover:after:scale-x-100",
+        "relative text-sm text-gray-500 uppercase after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-orange-400 after:transition-all after:duration-300 after:ease-in-out hover:text-black hover:after:scale-x-100",
         className,
       )}
     >
