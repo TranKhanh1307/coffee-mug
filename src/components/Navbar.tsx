@@ -3,12 +3,12 @@ import { barsIcon, cartIcon } from "../lib/icons";
 import { useState } from "react";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/", label: "Our Products" },
-  { href: "/", label: "Blog" },
-  { href: "/", label: "About" },
-  { href: "/", label: "Contact" },
-  { href: "/", label: "StyleGuide" },
+  { href: "#", label: "Home" },
+  { href: "#", label: "Our Products" },
+  { href: "#", label: "Blog" },
+  { href: "#", label: "About" },
+  { href: "#", label: "Contact" },
+  { href: "#", label: "StyleGuide" },
 ];
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="relative flex items-center justify-center gap-6 py-4">
       {/* Logo */}
-      <a href="/" className="mr-6 text-2xl font-bold">
+      <a href="#" className="mr-6 text-2xl font-bold">
         CoffeeStyle.
       </a>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
       </ul>
 
       {/* Cart */}
-      <NavItem href="/" className="ml-3 flex items-center gap-2">
+      <NavItem href="#" className="ml-3 flex items-center gap-2">
         <span className="size-5">{cartIcon}</span>
         <span>Cart</span>
         <span className="rounded-full bg-gray-500 px-2 text-white">0</span>
@@ -65,7 +65,7 @@ function NavItem({
     <a
       href={href}
       className={clsx(
-        "relative text-sm text-gray-500 uppercase after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-center after:scale-x-0 after:bg-orange-400 after:transition after:duration-300 after:ease-in-out hover:text-black hover:after:scale-x-100",
+        "relative text-sm text-gray-500 uppercase after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-orange-400 after:transition after:duration-300 after:ease-in-out hover:text-black hover:after:scale-x-100",
         className,
       )}
     >
