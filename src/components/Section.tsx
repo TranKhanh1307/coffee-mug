@@ -18,7 +18,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center justify-center gap-4">
       <Divider />
-      <p className="text-center text-gray-400 uppercase">{children}</p>
+      <h2 className="text-center text-gray-400 uppercase">{children}</h2>
       <Divider />
     </div>
   );
