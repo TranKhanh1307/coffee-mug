@@ -10,7 +10,7 @@ export default function Product({
   compact?: boolean;
 }) {
   return (
-    <div className="px-2 md:px-0">
+    <div>
       <a
         href="#"
         className={clsx(
@@ -31,7 +31,9 @@ export default function Product({
       <p className="mt-8 text-center text-xl">{mug.name}</p>
       <div className="mt-2 flex justify-center gap-2 text-lg">
         {mug.discountPrice && (
-          <p className="text-amber-700">{formatCurrency(mug.discountPrice)}</p>
+          <p className="font-semibold text-amber-700">
+            {formatCurrency(mug.discountPrice)}
+          </p>
         )}
         <p
           className={clsx("text-gray-400", mug.discountPrice && "line-through")}
