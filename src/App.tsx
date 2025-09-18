@@ -22,7 +22,7 @@ function App() {
         </Section>
 
         <Section title="More products">
-          <ProductList products={allProducts} columns={3} compact />
+          <ProductList products={allProducts} columns={3} />
         </Section>
 
         <Section title="Buy 2 mugs and get a coffee magazine free">

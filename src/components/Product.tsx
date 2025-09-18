@@ -4,18 +4,18 @@ import { formatCurrency } from "../lib/util";
 
 export default function Product({
   mug,
-  compact = false,
+  columns,
 }: {
   mug: Product;
-  compact?: boolean;
+  columns: number;
 }) {
   return (
     <div>
       <a
         href="#"
         className={clsx(
-          "group relative mx-auto block h-[540px] max-w-[460px] bg-cover bg-center bg-blend-darken transition-all duration-300 ease-in-out hover:bg-black/10",
-          compact && "md:h-[380px] md:max-w-[300px]",
+          "group relative mx-auto block h-[380px] bg-cover bg-center bg-blend-darken transition-all duration-300 ease-in-out hover:bg-black/10",
+          columns === 2 && "md:h-[540px]", //Taller image when there is only 2 columns on desktop screen
         )}
         style={{ backgroundImage: `url(${mug.imgUrl})` }}
       >
