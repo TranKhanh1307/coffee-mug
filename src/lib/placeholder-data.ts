@@ -1,4 +1,4 @@
-import type { Product } from "./definition";
+import type { Product, Story } from "./definition";
 
 export const featuredMugs: Product[] = [
   {
@@ -44,4 +44,36 @@ export const allProducts: Product[] = [
     price: 34,
   },
   ...featuredMugs,
+];
+
+export const stories: Story[] = [
+  {
+    title:
+      "Health Check: why do I get a headache when I haven’t had my coffee?",
+    summary:
+      "It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    date: "10/09/2018",
+    thumbnail:
+      "https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg",
+    content: "",
+  },
+  {
+    title: "How long does a cup of coffee keep you awake?",
+    summary:
+      "It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.",
+    date: "10/09/2018",
+    thumbnail:
+      "https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a481bece02f_Blog%20Pic%20Head%201.jpg",
+    content: "",
+  },
+  {
+    title:
+      "Recent research suggests that heavy coffee drinkers may reap health benefits.",
+    summary:
+      "It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    date: "10/09/2018",
+    thumbnail:
+      "https://cdn.prod.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a5e47ece03c_Blog%20Pic%20Head%208.jpg",
+    content: "",
+  },
 ];

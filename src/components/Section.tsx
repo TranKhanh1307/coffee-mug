@@ -1,22 +1,34 @@
 import type { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface SectionProps {
-  title: string;
-  children: ReactNode;
+  title?: string;
+  children?: ReactNode;
+  className?: string;
 }
 
-export default function Section({ title, children }: SectionProps) {
+export default function Section({ title, children, className }: SectionProps) {
   return (
-    <section>
-      <SectionTitle>{title}</SectionTitle>
-      <div className="mt-32">{children}</div>
+    <section className={twMerge("mx-auto max-w-[940px] px-4", className)}>
+      {title && (
+        <SectionTitle className={title && "mb-32"}>{title}</SectionTitle>
+      )}
+      {children}
     </section>
   );
 }
 
-function SectionTitle({ children }: { children: React.ReactNode }) {
+function SectionTitle({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <div className="flex items-center justify-center gap-4">
+    <div
+      className={twMerge("flex items-center justify-center gap-4", className)}
+    >
       <Divider />
       <h2 className="text-center text-gray-400 uppercase">{children}</h2>
       <Divider />
