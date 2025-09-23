@@ -13,4 +13,8 @@
   * {
     @apply box-border
   }
+
+  button {
+    @apply cursor-pointer
+  }
 }

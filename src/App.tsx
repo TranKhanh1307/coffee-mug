@@ -7,6 +7,7 @@ import Promotion from "./components/Promotion";
 import { allProducts, featuredMugs, stories } from "./lib/placeholder-data";
 import Stories from "./components/Stories";
 import Subscription from "./components/Subscription";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -41,13 +42,13 @@ function App() {
 
         <Section
           title="Sign up and get free coffee bags"
-          className="flex flex-col items-center justify-center space-y-4 bg-[#1d1f2e]"
+          className="space-y-4 bg-[#1d1f2e] py-8"
         >
           <Subscription />
         </Section>
       </main>
 
-      <footer></footer>
+      <Footer />
     </>
   );
 }

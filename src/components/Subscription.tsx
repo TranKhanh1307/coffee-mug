@@ -1,14 +1,19 @@
 export default function Subscription() {
   return (
     <>
-      <h2 className="text-2xl font-bold text-white">Coffee Updates</h2>
-      <form action="" className="flex flex-col">
+      <h2 className="flex justify-center text-3xl font-bold text-white">
+        Coffee Updates
+      </h2>
+      <form
+        action=""
+        className="flex flex-col justify-center gap-4 md:flex-row"
+      >
         <input
           type="text"
           placeholder="CUSTOMER@COFFEESTYLE.IO"
-          className="block w-full p-4 text-white outline-1 outline-gray-400"
+          className="basis-1/3 p-4 text-center tracking-widest text-white uppercase outline-1 outline-gray-400"
         />
-        <button className="text-white">Subscribe</button>
+        <button className="bg-white p-4 text-black uppercase">Subscribe</button>
       </form>
     </>
   );

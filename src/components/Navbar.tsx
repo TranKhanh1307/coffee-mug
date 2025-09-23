@@ -1,15 +1,7 @@
 import clsx from "clsx";
 import { barsIcon, cartIcon } from "../lib/icons";
 import { useState } from "react";
-
-const links = [
-  { href: "#", label: "Home" },
-  { href: "#", label: "Our Products" },
-  { href: "#", label: "Blog" },
-  { href: "#", label: "About" },
-  { href: "#", label: "Contact" },
-  { href: "#", label: "StyleGuide" },
-];
+import { menuLinks } from "../lib/constants";
 
 export default function Navbar() {
   const [isExpand, setIsExpand] = useState(false);
@@ -27,7 +19,7 @@ export default function Navbar() {
           isExpand ? "max-h-96" : "max-h-0",
         )}
       >
-        {links.map((link) => (
+        {menuLinks.map((link) => (
           <li key={link.label} className="py-2">
             <NavItem href={link.href}>{link.label}</NavItem>
           </li>

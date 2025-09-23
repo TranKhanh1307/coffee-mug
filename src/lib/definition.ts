@@ -12,3 +12,8 @@ export interface Story {
   thumbnail: string;
   content: string;
 }
+
+export interface Link {
+  href: string;
+  label: string;
+}
