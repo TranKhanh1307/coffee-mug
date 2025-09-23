@@ -6,6 +6,8 @@ import ProductList from "./components/ProductList";
 import Promotion from "./components/Promotion";
 import { allProducts, featuredMugs, stories } from "./lib/placeholder-data";
 import Stories from "./components/Stories";
+import Subscription from "./components/Subscription";
+
 function App() {
   return (
     <>
@@ -37,8 +39,11 @@ function App() {
           <Stories stories={stories} />
         </Section>
 
-        <Section title="Sign up and get free coffee bags">
-          
+        <Section
+          title="Sign up and get free coffee bags"
+          className="flex flex-col items-center justify-center space-y-4 bg-[#1d1f2e]"
+        >
+          <Subscription />
         </Section>
       </main>
 

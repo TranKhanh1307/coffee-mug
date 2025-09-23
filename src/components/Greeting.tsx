@@ -1,6 +1,6 @@
 export default function Greeting() {
   return (
-    <section className="mx-auto space-y-4 px-8 text-center md:max-w-[70%]">
+    <div className="mx-auto space-y-4 px-8 text-center md:max-w-[70%]">
       <p className="text-2xl">
         Even the all-powerful Pointing has no control about the blind texts.
       </p>
@@ -17,6 +17,6 @@ export default function Greeting() {
       >
         Read the full Story
       </a>
-    </section>
+    </div>
   );
 }

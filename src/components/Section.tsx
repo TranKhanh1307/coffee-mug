@@ -9,10 +9,10 @@ interface SectionProps {
 
 export default function Section({ title, children, className }: SectionProps) {
   return (
-    <section className={twMerge("mx-auto max-w-[940px] px-4", className)}>
-      {title && (
-        <SectionTitle className={title && "mb-32"}>{title}</SectionTitle>
-      )}
+    <section
+      className={twMerge("mx-auto max-w-[940px] space-y-32 px-4", className)}
+    >
+      {title && <SectionTitle>{title}</SectionTitle>}
       {children}
     </section>
   );
