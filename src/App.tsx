@@ -36,6 +36,10 @@ function App() {
         <Section title="Behind the mugs, lifestyle stories">
           <Stories stories={stories} />
         </Section>
+
+        <Section title="Sign up and get free coffee bags">
+          
+        </Section>
       </main>
 
       <footer></footer>
