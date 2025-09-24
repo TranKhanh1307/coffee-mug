@@ -2,6 +2,7 @@ import type { Product as ProductType } from "../lib/definition";
 import clsx from "clsx";
 import { formatCurrency } from "../lib/util";
 import Card from "./Card";
+import Reveal from "./Reveal";
 
 interface ProductListProps {
   products: ProductType[];
@@ -20,7 +21,9 @@ export default function ProductList({
   return (
     <div className={`grid gap-y-24 md:gap-x-4 ${gridCols}`}>
       {products.map((p) => (
-        <Product key={p.name} mug={p} columns={columns} />
+        <Reveal key={p.name}>
+          <Product mug={p} columns={columns} />
+        </Reveal>
       ))}
     </div>
   );
